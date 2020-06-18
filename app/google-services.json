@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "402155844465",
+    "firebase_url": "https://echovectoreapp.firebaseio.com",
+    "project_id": "echovectoreapp",
+    "storage_bucket": "echovectoreapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:402155844465:android:504f949fc1212bbc6c7cd0",
+        "android_client_info": {
+          "package_name": "com.example.echovectorapp2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "402155844465-kg0dm597dhlisga09t81b6tloen1h9gc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.echovectorapp2",
+            "certificate_hash": "8326f78fe5fcca5999f426d5bb818f5fc43ce875"
+          }
+        },
+        {
+          "client_id": "402155844465-thumufplk7j8gqe5mr70eg7k4gvncj67.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBjrGa0ADeIi__RwJ42vBQYEiirxGvguM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "402155844465-thumufplk7j8gqe5mr70eg7k4gvncj67.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:402155844465:android:cb8f29d28e33ed3a6c7cd0",
+        "android_client_info": {
+          "package_name": "com.example.echovectoreapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "402155844465-aemulcihq7p6ioohnp0fut7sqneu1pap.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.echovectoreapp",
+            "certificate_hash": "8326f78fe5fcca5999f426d5bb818f5fc43ce875"
+          }
+        },
+        {
+          "client_id": "402155844465-thumufplk7j8gqe5mr70eg7k4gvncj67.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBjrGa0ADeIi__RwJ42vBQYEiirxGvguM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "402155844465-thumufplk7j8gqe5mr70eg7k4gvncj67.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
