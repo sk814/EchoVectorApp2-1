@@ -57,36 +57,38 @@ public class Activity2 extends AppCompatActivity {
         saveButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 String nameField = name.getText().toString().trim();
                 String emailField = email.getText().toString().trim();
                 String passwordField = password.getText().toString().trim();
                 Map<String, Object> user = new HashMap<>();
 
-                user.put(KEY_NAME, nameField);
-                user.put(KEY_EMAIL, emailField);
-                user.put(KEY_PASSWORD, passwordField);
 
+                    user.put(KEY_NAME, nameField);
+                    user.put(KEY_EMAIL, emailField);
+                    user.put(KEY_PASSWORD, passwordField);
 
-                db.collection("Users")
-                        .add(user)
-                        .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
-                            @Override
-                            public void onSuccess(DocumentReference documentReference) {
-                                Toast.makeText(Activity2.this, "Successfully registered!", Toast.LENGTH_LONG).show();
-                                Log.d(TAG, "DocumentSnapshot added with ID: " + documentReference.getId());
-                            }
+                if(!TextUtils.isEmpty(nameField) && !TextUtils.isEmpty(emailField) && !TextUtils.isEmpty(passwordField)) {
+                    db.collection("Users")
+                            .add(user)
+                            .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                                @Override
+                                public void onSuccess(DocumentReference documentReference) {
+                                    Toast.makeText(Activity2.this, "Successfully registered!", Toast.LENGTH_LONG).show();
+                                    Log.d(TAG, "DocumentSnapshot added with ID: " + documentReference.getId());
+                                }
                             })
+                            .addOnFailureListener(new OnFailureListener() {
+                                @Override
+                                public void onFailure(@NonNull Exception e) {
+                                    Toast.makeText(Activity2.this, "Error! Registration failed.", Toast.LENGTH_LONG).show();
+                                    Log.d(TAG, "onFailure: " + e.toString());
+                                }
 
-
-                        .addOnFailureListener(new OnFailureListener() {
-                            @Override
-                            public void onFailure(@NonNull Exception e) {
-                                Toast.makeText(Activity2.this, "Error! Registration failed.", Toast.LENGTH_LONG).show();
-                                Log.d(TAG, "onFailure: " + e.toString());
-                            }
-
-                        });
-
+                            });
+                }else{
+                    Toast.makeText(Activity2.this, "Please input all details.", Toast.LENGTH_LONG).show();
+                }
 
             }
         });
