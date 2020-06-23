@@ -9,8 +9,8 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-    private Button button; // Button for Activity 2
-    private Button button2; //Button for Activity 3
+    private Button button; // Button for Activity 2 which is registration
+    private Button button2; //Button for Activity 3 which is products
     private Button button3; //Button for Activity 4
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openActivity3(); // third activity
+                openActivity3(); // Product Page
             }
         });
 
@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    /** Opens third activity which is the product page*/
     public void openActivity3() {
         Intent intent = new Intent(this, Activity3.class);
         startActivity(intent);
