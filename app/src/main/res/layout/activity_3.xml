@@ -6,4 +6,39 @@
     android:layout_height="match_parent"
     tools:context=".Activity3">
 
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="159dp"
+        android:layout_height="115dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003"></ImageView>
+
+    <TextView
+        android:id="@+id/productTitle"
+        android:layout_width="113dp"
+        android:layout_height="27dp"
+        android:text="Product Title"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toEndOf="@+id/productImage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022"></TextView>
+
+    <TextView
+        android:id="@+id/productDescription"
+        android:layout_width="109dp"
+        android:layout_height="20dp"
+        android:text="Short Description"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/productImage"
+        app:layout_constraintTop_toBottomOf="@+id/productTitle"
+        app:layout_constraintVertical_bias="0.062"></TextView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
