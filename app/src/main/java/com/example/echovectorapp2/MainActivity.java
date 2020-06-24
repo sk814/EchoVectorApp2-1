@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openActivity4(); // third activity
+                openActivity4(); //  Upload Page
             }
         });
     }
@@ -53,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    /** Opens fourth activity which is the upload page*/
     public void openActivity4() {
         Intent intent = new Intent(this, Activity4.class);
         startActivity(intent);
