@@ -85,4 +85,8 @@ public class Activity4 extends AppCompatActivity {
 
 
     }
+
+    /** Requests access to users gallery to choose a photo*/
+
+    
 }
