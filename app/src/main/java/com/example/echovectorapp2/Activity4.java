@@ -11,4 +11,8 @@ public class Activity4 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_4);
     }
+
+    /** Requests access to users gallery to choose a photo*/
+
+    
 }
