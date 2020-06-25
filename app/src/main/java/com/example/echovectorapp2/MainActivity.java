@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     private Button button; // Button for Activity 2 which is registration
     private Button button2; //Button for Activity 3 which is products
     private Button button3; //Button for Activity 4
+    private Button button4; // Button for Activity 5
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +40,14 @@ public class MainActivity extends AppCompatActivity {
                 openActivity4(); //  Upload Page
             }
         });
+
+        button4 = (Button) findViewById(R.id.button4);
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivity5(); //  Product Status Page
+            }
+        });
     }
 
     /** Opens second activity which is the registraion page*/
@@ -56,6 +65,12 @@ public class MainActivity extends AppCompatActivity {
     /** Opens fourth activity which is the upload page*/
     public void openActivity4() {
         Intent intent = new Intent(this, Activity4.class);
+        startActivity(intent);
+    }
+
+    /** Opens fifth activity which is the product status page */
+    public void openActivity5() {
+        Intent intent = new Intent(this, Activity5.class);
         startActivity(intent);
     }
 }
