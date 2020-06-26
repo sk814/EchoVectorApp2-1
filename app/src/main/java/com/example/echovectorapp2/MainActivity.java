@@ -12,8 +12,7 @@ public class MainActivity extends AppCompatActivity {
     private Button button; // Button for Activity 2 which is registration
     private Button button2; //Button for Activity 3 which is products
     private Button button3; //Button for Activity 4
-    private Button addProducts; //Button for adding products
-    private Button listProducts; //Button for listing products
+    private Button button4; // Button for Activity 5
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,19 +41,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        listProducts = (Button) findViewById(R.id.productList);
-        listProducts.setOnClickListener(new View.OnClickListener() {
+        button4 = (Button) findViewById(R.id.button4);
+        button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                listProducts(); //  List of products Page
-            }
-        });
-
-        addProducts = (Button) findViewById(R.id.product_upload_button);
-        addProducts.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openActivity3_2(); //  Upload Page with image
+                openActivity5(); //  Product Status Page
             }
         });
     }
@@ -76,15 +67,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, Activity4.class);
         startActivity(intent);
     }
-    //To add products
-    public void openActivity3_2() {
-        Intent intent = new Intent(this, Activity3_2.class);
-        startActivity(intent);
-    }
 
-    public void listProducts()
-    {
-        Intent intent = new Intent(this, ProductListActivity.class);
+    /** Opens fifth activity which is the product status page */
+    public void openActivity5() {
+        Intent intent = new Intent(this, Activity5.class);
         startActivity(intent);
     }
 }
