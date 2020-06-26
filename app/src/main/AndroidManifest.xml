@@ -9,12 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-<<<<<<< HEAD
+
         <activity android:name=".ProductListActivity"></activity>
         <activity android:name=".Activity3_2" />
-=======
+
         <activity android:name=".Activity5"></activity>
->>>>>>> f46e94e297fa8a5b2f6d2934c774a59ad2fa85f6
         <activity android:name=".Activity4" />
         <activity android:name=".Activity3" />
         <activity android:name=".Activity2" />

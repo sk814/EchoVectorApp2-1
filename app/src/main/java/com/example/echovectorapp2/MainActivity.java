@@ -13,6 +13,8 @@ public class MainActivity extends AppCompatActivity {
     private Button button2; //Button for Activity 3 which is products
     private Button button3; //Button for Activity 4
     private Button button4; // Button for Activity 5
+    private Button button3_2; // Button for Activity 5
+    private Button buttonList; // Button for Activity 5
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,6 +50,23 @@ public class MainActivity extends AppCompatActivity {
                 openActivity5(); //  Product Status Page
             }
         });
+
+
+        button3_2 = (Button) findViewById(R.id.button3_2);
+        button3_2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivity3_2(); //  Product upload Page
+            }
+        });
+
+        buttonList = (Button) findViewById(R.id.activity_product_list);
+        buttonList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivityList(); // List of Products Page
+            }
+        });
     }
 
     /** Opens second activity which is the registraion page*/
@@ -71,6 +90,18 @@ public class MainActivity extends AppCompatActivity {
     /** Opens fifth activity which is the product status page */
     public void openActivity5() {
         Intent intent = new Intent(this, Activity5.class);
+        startActivity(intent);
+    }
+
+    /** Opens fifth activity which is the product status page */
+    public void openActivity3_2() {
+        Intent intent = new Intent(this, Activity3_2.class);
+        startActivity(intent);
+    }
+
+    /** Opens fifth activity which is the product status page */
+    public void openActivityList() {
+        Intent intent = new Intent(this, ProductListActivity.class);
         startActivity(intent);
     }
 }
