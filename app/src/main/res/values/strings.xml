@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">EchoVectorApp2</string>
+    <string name="description">product_description</string>
+    <string name="title">Product title</string>
+    <string name="Upload_button">Upload</string>
+    <string name="Image_fetch_from_device">Image_fetch_from_device</string>
+    <string name="product_images">product_images</string>
+    <string name="menu_add">menu_add</string>
+    <string name="add_product_hint">Add product by clicking the plus icon</string>
 </resources>
