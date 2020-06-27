@@ -10,7 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".ProductListActivity"></activity>
+        <activity android:name=".ProductListActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+            ></activity>
         <activity android:name=".Activity3_2" />
 
         <activity android:name=".Activity5"></activity>
