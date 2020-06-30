@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
@@ -41,6 +42,25 @@ public class ProductListActivity extends AppCompatActivity {
     private CollectionReference collectionReference = db.collection("Product_Posted");
     private TextView noProductEntry;
 
+    /** Opens fifth activity which is the product status page */
+    public void openActivity5(View v) {
+        Intent intent = new Intent(this, Activity5.class);
+        startActivity(intent);
+    }
+
+    /** Opens first page of sequence */
+    public void startSequence(View v) {
+        Intent intent = new Intent(this, sequencePage1.class);
+        startActivity(intent);
+    }
+
+    /** Opens product list*/
+    public void openActivityList(View v) {
+        Intent intent = new Intent(this, ProductListActivity.class);
+        startActivity(intent);
+    }
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,9 +81,17 @@ public class ProductListActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu, menu);
+        MenuInflater findMenuItems = getMenuInflater();
+        findMenuItems.inflate(R.menu.menu, menu);
         return super.onCreateOptionsMenu(menu);
     }
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        MenuInflater findMenuItems = getMenuInflater();
+//        findMenuItems.inflate(R.menu.main_menu, menu);
+//        return super.onCreateOptionsMenu(menu);
+//    }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

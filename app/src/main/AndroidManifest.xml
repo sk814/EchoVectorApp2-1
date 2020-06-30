@@ -9,7 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+<<<<<<< HEAD
         <activity android:name=".ProductListActivity" />
+=======
+        <activity android:name=".sequencePage1"></activity>
+        <activity
+            android:name=".ProductListActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+>>>>>>> 88fa9df2b34281676cffc68a1af57ab5d49c50e2
         <activity android:name=".Activity3_2" />
         <activity android:name=".Activity5" />
         <activity android:name=".Activity4" />
